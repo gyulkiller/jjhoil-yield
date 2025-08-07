@@ -134,6 +134,316 @@
             line-height: 1.6;
         }
 
+        /* 공정 과정 섹션 */
+        .process-section {
+            background: white;
+            padding: 4rem 0;
+            margin: 4rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .process-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 3rem;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .process-image {
+            width: 100%;
+            margin: 0 auto 1.5rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .process-step h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 1rem;
+        }
+
+        .process-step p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* 철학 섹션 */
+        .philosophy-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 4rem 0;
+            margin: 4rem 0;
+            border-radius: 20px;
+        }
+
+        .philosophy-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .philosophy-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 3rem;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .philosophy-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #4a7c59;
+            transition: transform 0.3s ease;
+        }
+
+        .philosophy-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .philosophy-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .philosophy-card h3::before {
+            content: '💡';
+            margin-right: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .philosophy-text {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid #4a7c59;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-title {
+            font-weight: 700;
+            color: #2d5a27;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-text {
+            color: #2d5a27;
+            line-height: 1.6;
+        }
+
+        .trust-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .trust-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 2rem;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border: 1px solid #e9ecef;
+        }
+
+        .trust-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4a7c59;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-label {
+            color: #2d5a27;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* 레시피 섹션 */
+        .recipe-section {
+            margin: 4rem 0;
+        }
+
+        .recipe-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 3rem;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .recipe-image {
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .recipe-content {
+            padding: 2rem;
+        }
+
+        .recipe-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-ingredients {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-ingredients h4 {
+            color: #2d5a27;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .recipe-ingredients ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .recipe-ingredients li {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .recipe-ingredients li::before {
+            content: '•';
+            color: #4a7c59;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .recipe-steps {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #4a7c59;
+        }
+
+        .recipe-steps h4 {
+            color: #2d5a27;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .recipe-steps ol {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .recipe-steps li {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
         /* CTA 섹션 */
         .cta-section {
             background: linear-gradient(135deg, #4a7c59 0%, #2d5a27 100%);
@@ -200,6 +510,34 @@
                 grid-template-columns: 1fr;
             }
             
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-title {
+                font-size: 2rem;
+            }
+            
+            .philosophy-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .philosophy-title {
+                font-size: 2rem;
+            }
+            
+            .nature-title {
+                font-size: 2rem;
+            }
+            
+            .recipe-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2rem;
+            }
+            
             .container {
                 padding: 0 15px;
             }
@@ -245,6 +583,75 @@
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-20px) rotate(180deg); }
         }
+
+        /* 자연 이미지 섹션 */
+        .nature-section {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+            padding: 4rem 0;
+            margin: 4rem 0;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nature-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="rain" width="100" height="100" patternUnits="userSpaceOnUse"><line x1="50" y1="0" x2="50" y2="20" stroke="rgba(255,255,255,0.3)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23rain)"/></svg>');
+            opacity: 0.5;
+            animation: rain 2s linear infinite;
+        }
+
+        @keyframes rain {
+            0% { transform: translateY(-100px); }
+            100% { transform: translateY(100px); }
+        }
+
+        .nature-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .nature-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            margin-bottom: 2rem;
+        }
+
+        .nature-description {
+            font-size: 1.2rem;
+            color: #2d5a27;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .nature-symbol {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
     </style>
 </head>
 <body>
@@ -270,9 +677,10 @@
             <div class="hero-text">
                 <h2 class="hero-title">양심깨박의 선택은<br>자연에 대한 양보입니다</h2>
                 <p class="hero-description">
-                    양심깨박은 세척부터 로스팅, 착유까지 전 과정을 투명하게 공개하여 신뢰를 나누는 특별한 식재료입니다. 
-                    볶음 요리·샐러드·죽 토핑·소스 등으로도 안심하고 즐길 수 있으며, 정직과 책임을 바탕으로 위해 요소를 완벽히 배제해 반려동물 간식으로도 안전합니다. 
-                    풍부한 영양을 담은 깨박은 화분과 정원 토양에 뿌려 생명력을 되살리는 순환의 밑거름이 됩니다.
+                    양심깨박은 자연과 인간, 그리고 생명 사이의 조화로운 순환을 고민합니다. 우리는 세척에서 로스팅, 착유에 이르기까지 모든 과정을 투명하게 드러내며, 신뢰란 서로의 진실함을 나누는 데서 비롯된다고 믿습니다.  
+                    깨박은 부산물이 아닌 자연과 인간 사이에 새로운 식문화의 가능성을 열어 주는 매개체입니다.
+                    우리는 '양심'이라는 가치에서 파생한 정직과 책임의 원칙 아래 모든 위해 요소를 철저히 걷어내어, 사람과 반려동물이 함께 안심하고 즐길 수 있는 새로운 세대의 식재료를 제시합니다.
+                    풍요로운 영양을 품은 깨박은 다시 흙으로 돌아가 생명을 일으키는 밑거름이 되며, 이 순환 속에서 우리는 자연에 대한 양보와 존중의 가치를 실천합니다.
                 </p>
             </div>
         </section>
@@ -299,7 +707,7 @@
                 <div class="feature-icon">🐾</div>
                 <h3 class="feature-title">반려동물 안전</h3>
                 <p class="feature-description">
-                    정직과 책임을 바탕으로 위해 요소를 완벽히 배제해 반려동물 간식으로도 안전합니다.
+                    정직과 책임을 바탕으로 위해 요소를 완벽히 배제해 반려동물 간식 보조원료로도 안전합니다.
                 </p>
             </div>
             
@@ -309,6 +717,323 @@
                 <p class="feature-description">
                     풍부한 영양을 담은 깨박은 화분과 정원 토양에 뿌려 생명력을 되살립니다.
                 </p>
+            </div>
+        </section>
+
+        <!-- 공정 과정 섹션 -->
+        <section class="process-section fade-in">
+            <div class="container">
+                <h2 class="process-title">투명한 공정 과정</h2>
+                <div class="process-grid">
+                    <div class="process-step fade-in">
+                        <div class="process-image">
+                            <img src="sesame_meal.jpg" alt="로스팅 전 참깨" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; filter: brightness(1.2);">
+                        </div>
+                        <h3>로스팅 전 참깨</h3>
+                        <p>연한 베이지색의 생참깨로, 통통하고 매끄러운 표면을 가지고 있습니다. 최고 품질의 통참깨만을 엄선하여 사용합니다.</p>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-image">
+                            <img src="sesame_meal.jpg" alt="로스팅 후 참깨" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; filter: brightness(0.8) sepia(0.3);">
+                        </div>
+                        <h3>로스팅 후 참깨</h3>
+                        <p>적정 온도로 볶아진 황금빛 참깨로, 향과 맛이 극대화되었습니다. 전통 방식으로 정성껏 로스팅합니다.</p>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-image">
+                            <img src="sesame_meal.jpg" alt="양심깨박" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        </div>
+                        <h3>착유 후 참깨박</h3>
+                        <p>기름을 짜낸 후 남은 참깨박으로, 치매예방 효과가 있는 유용한 성분이 풍부하게 함유되어 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="highlight-box" style="margin: 2rem auto; max-width: 800px;">
+                    <div class="highlight-title">양심이 눈에 보이는 신뢰</div>
+                    <div class="highlight-text">
+                        정준호 양심기름은 '먹을 수 있는 참깨박'을 함께 동봉하여 소비자들이 참깨가 어떻게 가공되어 참깨박이 되는지 직접 눈으로 확인할 수 있게 합니다. 이를 통해 세척, 원재료 표기, 로스팅 온도, 통참깨 사용 여부, 전통 누름 압착 방식 등 최고의 맛과 건강함이 동시에 담긴 고품질의 전통기름을 선택하는데 필요한 중요한 정보들을 한 눈에 보고 알 수 있게 됩니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 철학 섹션 -->
+        <section class="philosophy-section fade-in">
+            <div class="philosophy-content">
+                <h2 class="philosophy-title">양심이 눈에 보이는 신뢰</h2>
+                
+                <div class="philosophy-grid">
+                    <div class="philosophy-card fade-in">
+                        <h3>전통의 진실</h3>
+                        <p class="philosophy-text">
+                            우리의 입맛은 흔히 생각했을 당연히 통깨로 만든다고 생각했을 '참기름'이 아닌 전혀 다른 기름에 길들여져 있었던 것입니다. 대부분의 소비자가 잘못 알고 있는 사실로 대한민국에서 흔히 접하고 있는 참기름들은 '통참깨'로 만들지 않습니다.
+                        </p>
+                        <div class="highlight-box">
+                            <div class="highlight-title">정준호 양심기름의 철학</div>
+                            <div class="highlight-text">
+                                "기름이 건강하기 위해서는 남은 원재료까지 건강해야 한다고 믿습니다. 원재료에서 나온 기름은 먹을 수 있지만, '원재료는 드릴수도 없고 먹을 수 없다'라는 말은 정준호양심참기름에서 성립되지 않습니다."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-card fade-in">
+                        <h3>투명한 신뢰</h3>
+                        <p class="philosophy-text">
+                            정준호 양심 참기름은 '먹을 수 있는 참깨박'을 함께 동봉하여 눈에 보이는 신뢰를 소비자들과 공유합니다. 소비자들은 '먹을수 있는 참깨박'을 통해 세척, 원재료 표기, 로스팅 온도, 통참깨 사용 여부, 전통 누름 압착 방식 등 최고의 맛과 건강함이 동시에 담긴 고품질의 전통기름을 선택하는데 필요한 중요한 정보들을 한 눈에 보고 알수 있게 됩니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="trust-section fade-in">
+                    <h3 class="trust-title">소비자들의 공감</h3>
+                    <div class="trust-grid">
+                        <div class="trust-item">
+                            <div class="trust-number">95.8%</div>
+                            <div class="trust-label">참깨박 제공 필요성<br>공감</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">167명</div>
+                            <div class="trust-label">설문 조사 참여자</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">100%</div>
+                            <div class="trust-label">투명한 공정<br>공개</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-card fade-in">
+                        <h3>치매예방 효과</h3>
+                        <p class="philosophy-text">
+                            참깨박이 치매를 예방한다는 연구 결과가 나왔습니다. 정준호양심참깨박은 참깨박이 다양한 요리에 식재료로 활용이 가능하다는 것을 시사하며, 무엇보다 참깨박 자체에 치매예방 효과가 있는 유용한 성분이 있는 것으로 알려져있습니다.
+                        </p>
+                    </div>
+
+                    <div class="philosophy-card fade-in">
+                        <h3>양심있는 식문화</h3>
+                        <p class="philosophy-text">
+                            정준호양심기름은 와디즈 크라우드펀딩을 통해 양심있는 식품이 일상이 되는 식문화를 호소해왔으며, 진짜가 진짜로서 살아남을 수 있다는 것을 증명해 보이고자 합니다. 미슐랭 가이드 레스토랑의 비법재료, 신라호텔 입점, 새벽방송 초유의 완판 등 하나하나씩 결실을 맺어가고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 자연 섹션 -->
+        <section class="nature-section fade-in">
+            <div class="nature-content">
+                <div class="nature-image">
+                    <img src="nature.png" alt="자연과 함께하는 순환" style="width: 100%; max-width: 600px; height: auto; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+                </div>
+                <h2 class="nature-title">자연과 함께하는 순환</h2>
+                <p class="nature-description">
+                    양심깨박은 화분과 정원 토양에 뿌려 생명력을 되살리는 순환의 밑거름이 됩니다. 
+                    비가 내리는 자연 속에서 새로운 생명이 자라나는 것처럼, 양심깨박도 우리의 일상에 
+                    새로운 생명력을 불어넣어 줍니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 레시피 섹션 -->
+        <section class="recipe-section fade-in">
+            <h2 class="recipe-title">양심깨박 활용 레시피</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card fade-in">
+                    <div class="recipe-image">
+                        <img src="sesame_meal.jpg" alt="양심깨박 샐러드" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-name">양심깨박 샐러드</h3>
+                        <p class="recipe-description">
+                            신선한 채소와 양심깨박을 조합한 건강한 샐러드입니다.
+                        </p>
+                        <div class="recipe-ingredients">
+                            <h4>재료</h4>
+                            <ul>
+                                <li>양심깨박 2큰술</li>
+                                <li>양상추 2잎</li>
+                                <li>토마토 1개</li>
+                                <li>오이 1/2개</li>
+                                <li>올리브유 1큰술</li>
+                                <li>레몬즙 1작은술</li>
+                                <li>소금, 후추 약간</li>
+                            </ul>
+                        </div>
+                        <div class="recipe-steps">
+                            <h4>만드는 방법</h4>
+                            <ol>
+                                <li>양상추는 적당한 크기로 찢고, 토마토와 오이는 썰어둡니다.</li>
+                                <li>양심깨박을 가볍게 볶아 향을 내줍니다.</li>
+                                <li>올리브유, 레몬즙, 소금, 후추로 드레싱을 만듭니다.</li>
+                                <li>채소와 양심깨박을 섞고 드레싱을 뿌려 완성합니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card fade-in">
+                    <div class="recipe-image">
+                        <img src="sesame_meal.jpg" alt="양심깨박 죽" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-name">양심깨박 죽</h3>
+                        <p class="recipe-description">
+                            부드럽고 영양가 있는 양심깨박 죽입니다.
+                        </p>
+                        <div class="recipe-ingredients">
+                            <h4>재료</h4>
+                            <ul>
+                                <li>쌀 1컵</li>
+                                <li>양심깨박 3큰술</li>
+                                <li>물 6컵</li>
+                                <li>소금 약간</li>
+                                <li>참기름 1작은술</li>
+                            </ul>
+                        </div>
+                        <div class="recipe-steps">
+                            <h4>만드는 방법</h4>
+                            <ol>
+                                <li>쌀을 깨끗이 씻어 30분간 불립니다.</li>
+                                <li>냄비에 물을 붓고 쌀을 넣어 끓입니다.</li>
+                                <li>쌀이 퍼지면 양심깨박을 넣고 저어줍니다.</li>
+                                <li>소금과 참기름을 넣어 간을 맞춰 완성합니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card fade-in">
+                    <div class="recipe-image">
+                        <img src="sesame_meal.jpg" alt="양심깨박 볶음밥" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-name">양심깨박 볶음밥</h3>
+                        <p class="recipe-description">
+                            고소한 양심깨박이 들어간 건강한 볶음밥입니다.
+                        </p>
+                        <div class="recipe-ingredients">
+                            <h4>재료</h4>
+                            <ul>
+                                <li>밥 2공기</li>
+                                <li>양심깨박 2큰술</li>
+                                <li>당근 1/2개</li>
+                                <li>양파 1/2개</li>
+                                <li>대파 1대</li>
+                                <li>식용유 2큰술</li>
+                                <li>간장 1큰술</li>
+                                <li>소금, 후추 약간</li>
+                            </ul>
+                        </div>
+                        <div class="recipe-steps">
+                            <h4>만드는 방법</h4>
+                            <ol>
+                                <li>당근, 양파, 대파를 적당한 크기로 썰어둡니다.</li>
+                                <li>팬에 식용유를 두르고 양심깨박을 볶아 향을 내줍니다.</li>
+                                <li>썰어둔 채소들을 넣고 볶아줍니다.</li>
+                                <li>밥을 넣고 간장, 소금, 후추로 간을 맞춰 완성합니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card fade-in">
+                    <div class="recipe-image">
+                        <img src="sesame_meal.jpg" alt="양심깨박 소스" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-name">양심깨박 소스</h3>
+                        <p class="recipe-description">
+                            다양한 요리에 활용할 수 있는 양심깨박 소스입니다.
+                        </p>
+                        <div class="recipe-ingredients">
+                            <h4>재료</h4>
+                            <ul>
+                                <li>양심깨박 4큰술</li>
+                                <li>마늘 2쪽</li>
+                                <li>간장 2큰술</li>
+                                <li>식초 1큰술</li>
+                                <li>설탕 1작은술</li>
+                                <li>참기름 1큰술</li>
+                                <li>깨 1큰술</li>
+                            </ul>
+                        </div>
+                        <div class="recipe-steps">
+                            <h4>만드는 방법</h4>
+                            <ol>
+                                <li>양심깨박을 가볍게 볶아 향을 내줍니다.</li>
+                                <li>마늘을 다져서 준비합니다.</li>
+                                <li>모든 재료를 섞어서 소스를 만듭니다.</li>
+                                <li>냉장고에 30분간 숙성시켜 완성합니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card fade-in">
+                    <div class="recipe-image">
+                        <img src="sesame_meal.jpg" alt="양심깨박 쿠키" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-name">양심깨박 쿠키</h3>
+                        <p class="recipe-description">
+                            고소하고 건강한 양심깨박 쿠키입니다.
+                        </p>
+                        <div class="recipe-ingredients">
+                            <h4>재료</h4>
+                            <ul>
+                                <li>양심깨박 1컵</li>
+                                <li>밀가루 2컵</li>
+                                <li>버터 1/2컵</li>
+                                <li>설탕 1/2컵</li>
+                                <li>계란 1개</li>
+                                <li>바닐라익스트랙 1작은술</li>
+                                <li>소금 1/4작은술</li>
+                            </ul>
+                        </div>
+                        <div class="recipe-steps">
+                            <h4>만드는 방법</h4>
+                            <ol>
+                                <li>버터와 설탕을 섞어 크림 상태로 만듭니다.</li>
+                                <li>계란과 바닐라익스트랙을 넣고 섞어줍니다.</li>
+                                <li>밀가루, 양심깨박, 소금을 넣고 반죽합니다.</li>
+                                <li>작은 공 모양으로 만들어 180도에서 12분 굽습니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card fade-in">
+                    <div class="recipe-image">
+                        <img src="nature.png" alt="양심깨박 화분 비료" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-name">양심깨박 화분 비료</h3>
+                        <p class="recipe-description">
+                            양심깨박을 활용한 자연 친화적 화분 비료입니다.
+                        </p>
+                        <div class="recipe-ingredients">
+                            <h4>재료</h4>
+                            <ul>
+                                <li>양심깨박 1컵</li>
+                                <li>흙 2컵</li>
+                                <li>물 1컵</li>
+                                <li>화분 1개</li>
+                            </ul>
+                        </div>
+                        <div class="recipe-steps">
+                            <h4>만드는 방법</h4>
+                            <ol>
+                                <li>양심깨박을 잘게 부숴줍니다.</li>
+                                <li>화분에 흙을 넣고 양심깨박을 섞어줍니다.</li>
+                                <li>물을 적당히 뿌려서 흙을 촉촉하게 만듭니다.</li>
+                                <li>식물을 심고 정기적으로 물을 줍니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
